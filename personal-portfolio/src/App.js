@@ -1,6 +1,8 @@
 import react, { useEffect } from "react";
 import './App.css';
 
+import Home from "./components/Home";
+
 function App() {
   useEffect(()=> {
     //* background gradient updates based on time of day
@@ -36,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Marc Rodriguez</h1>
+      <Home />
       <img className="trees" src="trans-tree-sil-mirror-crop.png" alt="tree silouette bottom border"/>
 
     </div>
