@@ -64,3 +64,22 @@ body {
     /* margin-bottom: 1em; */
     font-size: 4em;
 }
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    list-style: none;
+    z-index: 5;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu li {
+    margin: .75em 1em;
+}

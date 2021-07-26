@@ -1,7 +1,10 @@
-import react, { useEffect } from "react";
+import React, { useEffect } from "react";
+import { Route, Switch } from 'react-router-dom'
+
 import './App.css';
 
 import Home from "./components/Home";
+import Navigation from "./components/Navigation";
 
 function App() {
   useEffect(()=> {
@@ -38,9 +41,11 @@ function App() {
 
   return (
     <div className="App">
-      <Home />
+      <Navigation />
+      <Switch>
+        <Route exact path='/' render={() => <Home />} />
+      </Switch>
       <img className="trees" src="trans-tree-sil-mirror-crop.png" alt="tree silouette bottom border"/>
-
     </div>
   );
 }
