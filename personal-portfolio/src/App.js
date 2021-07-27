@@ -29,13 +29,9 @@ function App() {
       document.body.classList.remove(...bodyClasses)
       document.body.classList.add('pleasant-day-time')
     }
-    if (nowHour >= 17 && nowHour < 19) {
+    if (nowHour >= 17 && nowHour < 21) {
       document.body.classList.remove(...bodyClasses)
       document.body.classList.add('vivid-sunset')
-    }
-    if (nowHour >= 19 && nowHour < 21) {
-      document.body.classList.remove(...bodyClasses)
-      document.body.classList.add('sand-storm')
     }
   }, [])
 

@@ -40,6 +40,7 @@ body {
     background-attachment: fixed;
 }
 
+/* not using; colors don't work */
 .sand-storm {
     background: rgb(249,119,106);
     background: linear-gradient(180deg, rgba(249,119,106,1) 0%, rgba(254,122,87,1) 36%, rgba(177,40,94,1) 84%, rgba(114,42,88,1) 100%);
