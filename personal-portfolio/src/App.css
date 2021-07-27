@@ -128,9 +128,13 @@ h2 {
 
 .link-icons a {
     margin: 0 3%;
-    font-size: 1.35em;
+    font-size: 1.75em;
     text-decoration: none;
     color: rgb(73, 94, 151);
+}
+
+.link-icons span {
+    padding: 5px;
 }
 
 /*** MEDIA QUERIES ***/
@@ -149,6 +153,15 @@ h2 {
     }
     .home h1 {
         font-size: 4em;
+    }
+    .link-icons span {
+        display: none;
+    }
+    .link-icons a {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2.5em;
     }
 }
 
