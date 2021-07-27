@@ -5,11 +5,11 @@ const Navigation = () => {
 
     return (
         <ul className="menu">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/projects">Projects</NavLink></li>
-            <li><NavLink to="/blogs">Blogs</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/">home</NavLink></li>
+            <li><NavLink to="/about">about</NavLink></li>
+            <li><NavLink to="/projects">projects</NavLink></li>
+            <li><NavLink to="/blogs">blogs</NavLink></li>
+            <li><NavLink to="/contact">contact</NavLink></li>
         </ul>
       
       )
