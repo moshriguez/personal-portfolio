@@ -53,6 +53,7 @@ body {
     bottom: 0;
 }
 
+/*** HOME ***/
 .home {
     display: flex;
     align-items: center;
@@ -68,6 +69,7 @@ body {
     line-height: 1;
 }
 
+/*** NAVIGATION ***/
 .menu {
     position: fixed;
     bottom: 0;
@@ -82,7 +84,14 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: rgb(196, 45, 28);
+    /* color: rgb(196, 45, 28); */
+    color: rgb(73, 94, 151);
+
+}
+
+.menu a:hover, .menu a.active {
+    background-color: rgb(217, 121, 74);
+    color: rgb(73, 94, 151);
 }
 
 .menu li {
@@ -91,6 +100,14 @@ body {
     font-size: 1.35em;
 }
 
+/*** WATERCOLOUR CONTAINER ***/
+.watercolour-container {
+    background-color: rgb(217, 121, 74);
+    margin: auto;
+    width: 70%;
+}
+
+/*** MEDIA QUERIES ***/
 @media (max-width: 1024px) {
     .menu {
         background-color: black;
