@@ -6,6 +6,8 @@
 
 body {
     margin: 0;
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Teko', sans-serif;
 }
 
 .night-time {
@@ -62,7 +64,8 @@ body {
 .home h1 {
     margin: 0;
     /* margin-bottom: 1em; */
-    font-size: 4em;
+    font-size: 5.5em;
+    line-height: 1;
 }
 
 .menu {
@@ -74,6 +77,7 @@ body {
     width: 100%;
     justify-content: center;
     margin: 0;
+    padding: 0;
 }
 
 .menu a {
@@ -81,5 +85,7 @@ body {
 }
 
 .menu li {
-    margin: .75em 1em;
+    margin: .3em 1em;
+    /* font-style: italic; */
+    font-size: 1.35em;
 }
