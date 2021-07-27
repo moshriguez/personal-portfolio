@@ -5,6 +5,7 @@ import './App.css';
 
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
+import About from "./components/About";
 
 function App() {
   useEffect(()=> {
@@ -40,6 +41,7 @@ function App() {
       <Navigation />
       <Switch>
         <Route exact path='/' render={() => <Home />} />
+        <Route exact path='/about' render={() => <About />} />
       </Switch>
       <img className="trees" src="trans-tree-sil-mirror-crop.png" alt="tree silouette bottom border"/>
     </div>
