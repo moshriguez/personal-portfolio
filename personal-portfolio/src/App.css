@@ -103,8 +103,9 @@ body {
 /*** WATERCOLOUR CONTAINER ***/
 .watercolour-container {
     background-color: rgb(217, 121, 74);
-    margin: auto;
+    margin: 3% auto;
     width: 70%;
+    height: 750px;
 }
 
 /*** MEDIA QUERIES ***/
