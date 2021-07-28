@@ -118,6 +118,14 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 1.75em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
 /*** CONTACT ***/
 .link-icons {
     display: flex;

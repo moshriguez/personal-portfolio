@@ -25,11 +25,9 @@ const About = () => {
 
             <p>Music has always been an important part of my life. I studied music technology at University. I have also played the drums for most of my life. I have recently been exploring the intersection of audio and programming.</p> 
 
-            <p>The Pacific Northwest is a great place to walk about. I also enjoy hiking, camping, reading comic books, playing table top games, cooking and traveling.</p>
-
-            <p>Check out my Spotify account at the bottom of the page to check out what I have been listening to lately.</p>
+            <p>The Pacific Northwest is a great place to walk about. I enjoy hiking, camping, reading comic books, playing table top games, cooking and traveling.</p>
             
-            <h3>Skills:</h3>
+            <h3 id="skills">Skills:</h3>
 
         </motion.div>
     )
