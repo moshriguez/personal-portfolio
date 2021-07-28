@@ -1,11 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { risingDiv } from "../helpers/animation";
+
 
 const Projects = () => {
 
     return (
-        <div className="watercolour-container">
+        <motion.div className="watercolour-container" variants={risingDiv} initial="start" animate="end">
             
-        </div>
+        </motion.div>
     )
 }
 

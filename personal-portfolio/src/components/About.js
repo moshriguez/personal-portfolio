@@ -1,9 +1,12 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { risingDiv } from "../helpers/animation";
+
 
 const About = () => {
 
     return (
-        <div className="watercolour-container">
+        <motion.div className="watercolour-container" variants={risingDiv} initial="start" animate="end">
             <h2>About Me</h2>
             <h3>Hello!</h3> 
             <h3>I'm Marc Rodriguez.</h3> 
@@ -28,7 +31,7 @@ const About = () => {
             
             <h3>Skills:</h3>
 
-        </div>
+        </motion.div>
     )
 }
 
