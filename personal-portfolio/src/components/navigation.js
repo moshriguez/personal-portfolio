@@ -30,7 +30,6 @@ const Navigation = () => {
 
     return (
         <motion.ul className="menu" variants={risingSun} initial="start" animate="end">
-            <motion.li variants={variant}><NavLink to="/">home</NavLink></motion.li>
             <motion.li variants={variant}><NavLink to="/about">about</NavLink></motion.li>
             <motion.li variants={variant}><NavLink to="/projects">projects</NavLink></motion.li>
             <motion.li variants={variant}><NavLink to="/blogs">blogs</NavLink></motion.li>

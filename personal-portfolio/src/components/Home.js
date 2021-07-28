@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Home = () => {
     const risingSun = {
         start: {
-            opacity: 1,
+            opacity: 0,
             y: 500
         },
         end: {
