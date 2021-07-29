@@ -21,7 +21,7 @@ const Projects = () => {
                         <a href="">Github</a>
                         <a href="">Demo</a>
                     </div>
-                    <div className="skill-used">
+                    <div className="skill-icons">
                         <SiReact />
                         <SiRedux />
                         <SiRuby />
@@ -38,7 +38,7 @@ const Projects = () => {
                         <a href="">Github</a>
                         <a href="">Demo</a>
                     </div>
-                    <div className="skill-used">
+                    <div className="skill-icons">
                         <SiReact />
                         <SiRedux />
                         <SiRuby />
@@ -54,7 +54,7 @@ const Projects = () => {
                         <a href="">Github</a>
                         <a href="">Demo</a>
                     </div>
-                    <div className="skill-used">
+                    <div className="skill-icons">
                         <SiReact />
                         <SiRedux />
                         <SiRuby />
@@ -70,7 +70,7 @@ const Projects = () => {
                         <a href="">Github</a>
                         <a href="">Demo</a>
                     </div>
-                    <div className="skill-used">
+                    <div className="skill-icons">
                         <SiReact />
                         <SiRedux />
                         <SiRuby />
@@ -86,7 +86,7 @@ const Projects = () => {
                         <a href="">Github</a>
                         <a href="">Demo</a>
                     </div>
-                    <div className="skill-used">
+                    <div className="skill-icons">
                         <SiReact />
                         <SiRedux />
                         <SiRuby />

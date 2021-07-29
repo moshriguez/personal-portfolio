@@ -67,7 +67,7 @@ const ProjectCard = () => {
                 }
                 <a href={demo}>Demo</a>
             </div>
-            <div className="skill-used">
+            <div className="skill-icons">
                 {renderAllIcons()}
             </div>
         </div>
