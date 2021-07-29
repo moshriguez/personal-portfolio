@@ -6,7 +6,7 @@ export const projects = [
         frontend: 'https://github.com/moshriguez/drum-machine-frontend',
         backend: 'https://github.com/moshriguez/drum-machine-backend',
         demo: 'https://loom.com/share/92620bab5dea457da1b08882d2987169',
-        icons: ['react', 'redux', 'ruby', 'rails', 'firebase', 'webtoken', 'sqlite', 'css']
+        tools: ['react', 'redux', 'ruby', 'rails', 'firebase', 'webtoken', 'sqlite', 'css']
     },
     {
         name: "What's in the Fridge?",
@@ -15,7 +15,7 @@ export const projects = [
         frontend: 'https://github.com/moshriguez/whats-in-the-fridge-frontend',
         backend: 'https://github.com/moshriguez/whats-in-the-fridge-backend',
         demo: 'https://www.loom.com/share/176d2e296731419e90a2bde95143e59d',
-        icons: ['react', 'ruby', 'rails', 'webtoken', 'sqlite', 'bootstrap', 'api', 'json']
+        tools: ['react', 'ruby', 'rails', 'webtoken', 'sqlite', 'bootstrap', 'api', 'json']
     },
     {
         name: 'Puzzle Library',
@@ -23,7 +23,7 @@ export const projects = [
         image: '',
         github: 'https://github.com/moshriguez/puzzle-library-app',
         demo: '',
-        icons: ['react', 'ruby', 'sqlite']
+        tools: ['react', 'ruby', 'sqlite']
     },
     {
         name: 'Robots vs. Kittens',
@@ -31,7 +31,7 @@ export const projects = [
         image: '',
         github: 'https://github.com/zfrohardt/robokitten',
         demo: '',
-        icons: ['react', 'css', 'api', 'json']
+        tools: ['react', 'css', 'api', 'json']
     },
     {
         name: 'What you know?',
@@ -39,6 +39,6 @@ export const projects = [
         image: '',
         github: 'https://github.com/harman-kaur0/Jeopardy',
         demo: '',
-        icons: ['javascript', 'css', 'html', 'api', 'json']
+        tools: ['javascript', 'css', 'html', 'api', 'json']
     },
 ]
