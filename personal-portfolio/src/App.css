@@ -137,6 +137,10 @@ a {
 .watercolour-container a:hover {
     text-decoration: underline;
 }
+/*** ABOUT ***/
+.about-me {
+    display: flex;
+}
 
 /*** PROJECTS ***/
 .projects-container {
@@ -161,7 +165,7 @@ a {
     width: 100%;
 }
 
-.project-card .links, .project-card .skill-used {
+.project-card .links, .skill-icons {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
