@@ -147,7 +147,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
 }
 
 .project-card {
@@ -157,8 +157,8 @@ a {
     flex-wrap: wrap;
     border: 1px solid black;
     align-items: center;
-    margin: .15em;
-    background: rgb(255 255 255 / 75%);
+    margin: .45em;
+    background: rgb(255 255 255 / 70%);
     padding: .25em
 }
 
@@ -206,6 +206,12 @@ a {
     .link-icons a {
         font-size: 1.75em;
     }
+    .watercolour-container {
+        width: 80%
+    }
+    .projects-container {
+        padding-bottom: 1em;
+    }
 }
 
 @media (max-width: 425px) {
@@ -224,10 +230,16 @@ a {
     h2 {
         font-size: 2.5em;
     }
-}
-
-@media (max-width: 425px) {
     .menu li {
         margin: 0 .5em;
+    }
+    .projects-container {
+        padding-bottom: 0em;
+    }
+}
+
+@media (max-width: 320px) {
+    .watercolour-container {
+        width: 90%
     }
 }
