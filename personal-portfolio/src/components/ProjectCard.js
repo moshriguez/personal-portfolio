@@ -59,10 +59,10 @@ const ProjectCard = ({ project }) => {
             <img src="https://picsum.photos/300/200" alt="placeholder" />
             <p>{description}</p>
             <div className="links">
-                {!!github ? <a href={github}>Github <SiGithub /></a> : (
+                {!!github ? <a href={github}><SiGithub /> Github</a> : (
                         <>
-                            <a href={frontend}>Frontend <SiGithub /></a>
-                            <a href={backend}>Backend <SiGithub /></a>
+                            <a href={frontend}><SiGithub /> Frontend</a>
+                            <a href={backend}><SiGithub /> Backend</a>
                         </>
                     )
                 }
