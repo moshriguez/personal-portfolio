@@ -18,11 +18,11 @@ export const projects = [
         tools: ['react', 'ruby', 'rails', 'webtoken', 'sqlite', 'bootstrap', 'api', 'json']
     },
     {
-        name: 'Puzzle Library',
-        description: 'An app where users can browse and check out jigsaw puzzles',
+        name: 'PuzzleTheque',
+        description: 'A puzzle library app where users can browse and check out jigsaw puzzles',
         image: '',
         github: 'https://github.com/moshriguez/puzzle-library-app',
-        demo: '',
+        demo: 'https://www.loom.com/share/ac4af1c5f89c4b3c958c3842bfc7e63c',
         tools: ['react', 'ruby', 'sqlite']
     },
     {
