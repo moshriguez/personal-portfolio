@@ -66,7 +66,7 @@ const ProjectCard = ({ project }) => {
                         </>
                     )
                 }
-                <a href={demo}>Demo <FaVideo /></a>
+                <a href={demo}><FaVideo /> Demo</a>
             </div>
             <div className="skill-icons">
                 {renderAllIcons()}
