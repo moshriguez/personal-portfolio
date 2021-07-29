@@ -6,94 +6,22 @@ import { DiSqllite } from 'react-icons/di';
 import { SiBootstrap, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiJsonwebtokens, SiRails, SiReact, SiRedux, SiRuby, SiVisualstudio } from 'react-icons/si';
 import { VscJson } from 'react-icons/vsc';
 
+import { projects } from "../helpers/projects";
+import ProjectCard from "./ProjectCard";
+
 const Projects = () => {
+
+    const renderCard = () => {
+        return projects.map(project => {
+            return <ProjectCard project={project}/>
+        })
+    }
 
     return (
         <motion.div className="watercolour-container" variants={risingDiv} initial="start" animate="end">
             <h2>Projects</h2>
             <div className="projects-container">
-                <div className="project-card">
-                    <h3>Project Name</h3>
-                    <img src="https://picsum.photos/300/200" alt="placeholder" />
-                    <p>Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</p>
-                    <div className="links">
-                        <a href="">Github</a>
-                        <a href="">Github</a>
-                        <a href="">Demo</a>
-                    </div>
-                    <div className="skill-icons">
-                        <SiReact />
-                        <SiRedux />
-                        <SiRuby />
-                        <SiRails />
-                        <SiFirebase />
-                        <SiJsonwebtokens />
-                    </div>
-                </div>
-                <div className="project-card">
-                    <h3>Project Name</h3>
-                    <img src="https://picsum.photos/300/200" alt="placeholder" />
-                    <p>Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</p>
-                    <div className="links">
-                        <a href="">Github</a>
-                        <a href="">Demo</a>
-                    </div>
-                    <div className="skill-icons">
-                        <SiReact />
-                        <SiRedux />
-                        <SiRuby />
-                        <SiRails />
-                        <SiFirebase />
-                    </div>
-                </div>
-                <div className="project-card">
-                    <h3>Project Name</h3>
-                    <img src="https://picsum.photos/300/200" alt="placeholder" />
-                    <p>Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</p>
-                    <div className="links">
-                        <a href="">Github</a>
-                        <a href="">Demo</a>
-                    </div>
-                    <div className="skill-icons">
-                        <SiReact />
-                        <SiRedux />
-                        <SiRuby />
-                        <SiRails />
-                        <SiFirebase />
-                    </div>
-                </div>
-                <div className="project-card">
-                    <h3>Project Name</h3>
-                    <img src="https://picsum.photos/300/200" alt="placeholder" />
-                    <p>Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</p>
-                    <div className="links">
-                        <a href="">Github</a>
-                        <a href="">Demo</a>
-                    </div>
-                    <div className="skill-icons">
-                        <SiReact />
-                        <SiRedux />
-                        <SiRuby />
-                        <SiRails />
-                        <SiFirebase />
-                    </div>
-                </div>
-                <div className="project-card">
-                    <h3>Project Name</h3>
-                    <img src="https://picsum.photos/300/200" alt="placeholder" />
-                    <p>Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</p>
-                    <div className="links">
-                        <a href="">Github</a>
-                        <a href="">Demo</a>
-                    </div>
-                    <div className="skill-icons">
-                        <SiReact />
-                        <SiRedux />
-                        <SiRuby />
-                        <SiRails />
-                        <SiFirebase />
-                    </div>
-                </div>
+                {renderCard()}
             </div>
         </motion.div>
     )

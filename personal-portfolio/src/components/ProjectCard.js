@@ -3,40 +3,41 @@ import { motion } from "framer-motion";
 import { risingDiv } from "../helpers/animation";
 import { AiFillApi } from 'react-icons/ai';
 import { DiSqllite } from 'react-icons/di';
+import { FaVideo } from 'react-icons/fa';
 import { SiBootstrap, SiCss3, SiFirebase, SiGithub, SiHtml5, SiJavascript, SiJsonwebtokens, SiRails, SiReact, SiRedux, SiRuby } from 'react-icons/si';
 import { VscJson } from 'react-icons/vsc';
 
-import { projects } from "../helpers/projects";
+const ProjectCard = ({ project }) => {
+    const {name, description, image, frontend, backend, github, demo, tools} = project
 
-const ProjectCard = () => {
-    const [name, description, image, frontend, backend, github, demo, tools] = projects
+    console.log(project)
 
     const renderIcon = (name, i) => {
         switch(name) {
             case "api":
-                return <AiFillApi key={i} color="#61DBFB"/>
+                return <AiFillApi key={i} color="#f05c2b"/>
             case "sqlite":
-                return <DiSqllite key={i} color="#F0DB4F"/>
+                return <DiSqllite key={i} color="#034a62"/>
             case "bootstrap":
-                return <SiBootstrap key={i} color="#E31864"/>
+                return <SiBootstrap key={i} color="#7852b2"/>
             case "css":
-                return <SiCss3 key={i} color="#CC0000"/>
+                return <SiCss3 key={i} color="#264de4"/>
             case "firebase":
-                return <SiFirebase key={i} color="#013D57"/>
+                return <SiFirebase key={i} color="#039be5"/>
             case "html":
-                return <SiHtml5 key={i} color="#764ABC"/>
+                return <SiHtml5 key={i} color="#e54b20"/>
             case "javascript":
-                return <SiJavascript key={i} color="#0064A5"/>
+                return <SiJavascript key={i} color="#1f4ece"/>
             case "webtoken":
-                return <SiJsonwebtokens key={i} color="#6CD5FD"/>
+                return <SiJsonwebtokens key={i} color="#06f1e6"/>
             case "rails":
-                return <SiRails key={i} color="#673BB6"/>
+                return <SiRails key={i} color="#c42f23"/>
             case "react":
-                return <SiReact key={i} color="gold"/>
+                return <SiReact key={i} color="#61d9fb"/>
             case "redux":
-                return <SiRedux key={i} color="skyblue"/>
+                return <SiRedux key={i} color="#764abc"/>
             case "ruby":
-                return <SiRuby key={i} color="skyblue"/>
+                return <SiRuby key={i} color="#bc1c0a"/>
             case "json":
                 return <VscJson key={i} color="skyblue"/>
                 default:
@@ -61,11 +62,11 @@ const ProjectCard = () => {
                 {!!github ? <a href={github}>Github <SiGithub /></a> : (
                         <>
                             <a href={frontend}>Frontend <SiGithub /></a>
-                            <a href={backend}>Backend</a>
+                            <a href={backend}>Backend <SiGithub /></a>
                         </>
                     )
                 }
-                <a href={demo}>Demo</a>
+                <a href={demo}>Demo <FaVideo /></a>
             </div>
             <div className="skill-icons">
                 {renderAllIcons()}

@@ -37,20 +37,20 @@ const About = () => {
                 <div className="tech-skills">
                     <h3 id="skills">Skills:</h3>
                     <div className="skill-icons">
-                        <SiHtml5 color="#764ABC"/>
-                        <SiCss3 color="#CC0000"/>
-                        <SiJavascript color="#0064A5"/>
-                        <SiReact color="gold"/>
-                        <SiRedux color="skyblue"/>
-                        <SiRuby color="skyblue"/>
-                        <SiRails color="#673BB6"/>
-                        <SiFirebase color="#013D57"/>
-                        <SiJsonwebtokens color="#6CD5FD"/>
-                        <AiFillApi color="#61DBFB"/>
+                        <SiHtml5 color="#e54b20"/>
+                        <SiCss3 color="#264de4"/>
+                        <SiJavascript color="#1f4ece"/>
+                        <SiReact color="#61d9fb"/>
+                        <SiRedux color="#764abc"/>
+                        <SiRuby color="#bc1c0a"/>
+                        <SiRails color="#c42f23"/>
+                        <SiFirebase color="#039be5"/>
+                        <SiJsonwebtokens color="#06f1e6"/>
+                        <AiFillApi color="#f05c2b"/>
                         <VscJson color="skyblue"/>
-                        <DiSqllite color="#F0DB4F"/>
-                        <SiBootstrap color="#E31864"/>
-                        <SiVisualstudio color="skyblue"/>
+                        <DiSqllite color="#034a62"/>
+                        <SiBootstrap color="#7852b2"/>
+                        <SiVisualstudio color="##21a5f1"/>
                     </div>
                 </div>
             </div>
