@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { risingDiv } from "../helpers/animation";
-import { SiFirebase, SiRails, SiReact, SiRedux, SiRuby } from 'react-icons/si';
+import { AiFillApi } from 'react-icons/ai';
+import { DiSqllite } from 'react-icons/di';
+import { SiBootstrap, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiJsonwebtokens, SiRails, SiReact, SiRedux, SiRuby, SiVisualstudio } from 'react-icons/si';
+import { VscJson } from 'react-icons/vsc';
 
 const Projects = () => {
 
@@ -15,6 +18,7 @@ const Projects = () => {
                     <p>Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</p>
                     <div className="links">
                         <a href="">Github</a>
+                        <a href="">Github</a>
                         <a href="">Demo</a>
                     </div>
                     <div className="skill-used">
@@ -23,6 +27,7 @@ const Projects = () => {
                         <SiRuby />
                         <SiRails />
                         <SiFirebase />
+                        <SiJsonwebtokens />
                     </div>
                 </div>
                 <div className="project-card">
