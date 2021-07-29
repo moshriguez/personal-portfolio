@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { risingDiv } from "../helpers/animation";
 import { AiFillApi } from 'react-icons/ai';
@@ -9,6 +9,22 @@ import { VscJson } from 'react-icons/vsc';
 
 
 const About = () => {
+    const width = window.innerWidth 
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+    const [windowWidth, setWindowWidth] = useState(width)
+
+
+    useEffect(() => {
+        window.addEventListener('resize', () => calculateWidth())
+        return () => {window.removeEventListener('resize', calculateWidth)}
+    }, [])
+    const calculateWidth = () => {
+        const newWidth = window.innerWidth 
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+        setWindowWidth(newWidth)
+    }
 
     return (
         <motion.div className="watercolour-container" variants={risingDiv} initial="start" animate="end">
@@ -16,6 +32,7 @@ const About = () => {
             <div className="about-me">
                 <div className="bio">
                     <h3>Hello!</h3> 
+                    {windowWidth < 769 ? <img src="http://placekitten.com/200/300" alt="pic of Marc Rodriguez"/> : null}
                     <h3>I'm Marc Rodriguez.</h3> 
                     <p>I'm a Full Stack Developer with experience using frontend and backend technologies. <a href="#skills">see full list of skills</a></p>
                     <p>I am a recent graduate of Flatiron School.</p>
@@ -28,13 +45,16 @@ const About = () => {
 
                     <p>With my background in merchandising, I prioritize completing tasks under pressure, meeting deadlines and delivering quality products that are accurate.</p>
 
+                </div>
+                <div className="tech-skills">
+                    {windowWidth >= 769 ? <img src="http://placekitten.com/200/300" alt="pic of Marc Rodriguez"/> : null}
                     <h3>When I am not coding:</h3>            
 
                     <p>Music has always been an important part of my life. I studied music technology at University. I have also played the drums for most of my life. I have recently been exploring the intersection of audio and programming.</p> 
 
                     <p>The Pacific Northwest is a great place to walk about. I enjoy hiking, camping, reading comic books, playing table top games, cooking and traveling.</p>
                 </div>
-                <div className="tech-skills">
+                <div className="about-skills">
                     <h3 id="skills">Skills:</h3>
                     <div className="skill-icons">
                         <SiHtml5 color="#e54b20"/>
