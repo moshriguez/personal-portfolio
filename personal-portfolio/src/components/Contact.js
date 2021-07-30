@@ -12,15 +12,15 @@ const Contact = () => {
         <motion.div className="watercolour-container" variants={risingDiv} initial="start" animate="end" >
             <h2>Contact Me</h2>
             <div className="link-icons">
-                <a href="" >   
+                <a href="https://www.linkedin.com/in/marc-herman-rodriguez" target="_blank">   
                     <FontAwesomeIcon icon={faLinkedin} /> 
                     <span>LinkedIn</span>
                 </a>
-                <a href="" >
+                <a href="https://github.com/moshriguez" target="_blank" >
                     <FontAwesomeIcon icon={faGithub} /> 
                     <span>GitHub</span>
                 </a>
-                <a href="" >
+                <a href="mailto:marc.herman.rodriguez@gmail.com" >
                     <FontAwesomeIcon icon={faEnvelope} /> 
                     <span>Email</span>
                 </a>
