@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { risingDiv } from "../helpers/animation";
 
 const BlogCard = ({ blog }) => {
-    const { name, brief, time, image, tags } = blog
+    const { name, brief, time, image, url, tags } = blog
 
     const renderTags = () => {
         return (
@@ -20,7 +20,7 @@ const BlogCard = ({ blog }) => {
         <div className="blog-img">
             <img src={image} alt="blog splash pic" />
         </div>
-        <h3>{name}</h3>
+        <a href={url} target="_blank"><h3>{name}</h3></a>
         <div className="blog-card-data">
             <p>{time} minute read</p>
             <div className="tags">
