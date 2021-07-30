@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
     return (
         <div className="project-card">
             <h3>{name}</h3>
-            <img src="https://picsum.photos/300/200" alt="placeholder" />
+            <img src={image} alt="{name} screenshot" />
             <p>{description}</p>
             <div className="links">
                 {!!github ? <a href={github}><SiGithub /> Github</a> : (
