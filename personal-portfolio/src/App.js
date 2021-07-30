@@ -52,7 +52,7 @@ function App() {
         <Route exact path='/blogs' render={() => <Blogs />} />
         <Route exact path='/contact' render={() => <Contact />} />
       </Switch>
-      <img className="trees" src="trans-tree-sil-mirror-crop.png" alt="tree silouette bottom border"/>
+      <img className="trees" src="trans-tree-sil-mirror-crop-new.png" alt="tree silouette bottom border"/>
     </div>
   );
 }
