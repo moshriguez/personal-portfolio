@@ -20,16 +20,14 @@ const BlogCard = ({ blog }) => {
         <div className="blog-img">
             <img src={image} alt="blog splash pic" />
         </div>
-        <div className="blog-info" >
-            <h3>{name}</h3>
-            <div className="blog-card-data">
-                <p>{time} minute read</p>
-                <div className="tags">
-                    {renderTags()}
-                </div>
+        <h3>{name}</h3>
+        <div className="blog-card-data">
+            <p>{time} minute read</p>
+            <div className="tags">
+                {renderTags()}
             </div>
-            <p>{brief}</p>
         </div>
+        <p>{brief}</p>
     </div>
 
     )
