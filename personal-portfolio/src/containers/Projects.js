@@ -7,7 +7,7 @@ import { SiBootstrap, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiJsonwebtokens
 import { VscJson } from 'react-icons/vsc';
 
 import { projects } from "../helpers/projects";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
 
