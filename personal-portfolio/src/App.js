@@ -9,8 +9,8 @@ import './App.css';
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import About from "./components/About";
-import Projects from "./components/Projects";
-import Blogs from "./components/Blogs";
+import Projects from "./containers/Projects";
+import Blogs from "./containers/Blogs";
 import Contact from "./components/Contact";
 
 function App() {

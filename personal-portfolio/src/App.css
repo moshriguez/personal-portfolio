@@ -206,6 +206,59 @@ a {
     font-size: 1.15em;
 }
 
+/*** BLOGS ***/
+.blogs-container {
+    padding-bottom: 4em;
+}
+
+.blog-card {
+    display: flex;
+    background: rgb(255 255 255 / 70%);
+    border: 1px solid black;
+    margin: .35em 0;
+}
+
+.blog-img {
+    display: flex;
+    align-items: center;
+}
+
+.blog-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.blog-info {
+    padding: 0.25em 0.25em 0;
+}
+
+.blog-info h3 {
+    font-size: 1.3em;
+}
+
+.blog-card-data {
+    display: flex;
+    align-items: center;
+}
+
+.blog-info p {
+    margin: 0 0 .07em;
+}
+
+.tags {
+    display: flex;
+    margin-left: .5em;
+}
+
+.tag {
+    padding: .15em .15em 0em;
+    margin: .15em;
+    background: #6d6dbd63;
+    line-height: 1;
+    font-size: 1.06em;
+}
+
 /*** CONTACT ***/
 .link-icons {
     display: flex;
@@ -242,7 +295,7 @@ a {
     .link-icons a {
         font-size: 1.75em;
     }
-    .projects-container, .about-me {
+    .projects-container, .about-me, .blogs-container {
         padding-bottom: 1em;
     }
     .tech-skills {
@@ -273,7 +326,7 @@ a {
     .menu li {
         margin: 0 .5em;
     }
-    .projects-container, .about-me {
+    .projects-container, .about-me, .blogs-container {
         padding-bottom: 0em;
     }
 }
