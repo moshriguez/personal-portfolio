@@ -102,11 +102,15 @@ body {
 
 /*** WATERCOLOUR CONTAINER ***/
 .watercolour-container {
-    background-color: rgb(217, 121, 74);
+    /* background-color: rgb(217, 121, 74); */
+    background-image: url(./watercolour-backgrounds/div-bd5.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
     color: rgb(73, 94, 151);
-    margin: 5rem auto;
+    margin: 2rem auto;
     width: 70%;
-    padding: 3%;
+    padding: 5%;
     /* height: 750px;*/
 }
 
@@ -318,9 +322,9 @@ a {
     .link-icons a {
         font-size: 1.75em;
     }
-    .projects-container, .about-me, .blogs-container {
+    /* .projects-container, .about-me, .blogs-container {
         padding-bottom: 1em;
-    }
+    } */
     .tech-skills {
         grid-column: 1 / 3;
         grid-row: 3 / 4;
@@ -352,9 +356,14 @@ a {
     .menu li {
         margin: 0 .5em;
     }
-    .projects-container, .about-me, .blogs-container {
-        padding-bottom: 0em;
+    .watercolour-container {
+        width: 100%;
+        padding: 7%;
     }
+
+    /* .projects-container, .about-me, .blogs-container {
+        padding-bottom: 0em;
+    } */
     .blog-img {
         display: none;
     }
@@ -372,7 +381,7 @@ a {
 }
 
 @media (max-width: 320px) {
-    .watercolour-container {
+    /* .watercolour-container {
         width: 90%
-    }
+    } */
 }
