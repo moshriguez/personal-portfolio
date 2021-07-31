@@ -85,19 +85,18 @@ body {
 
 .menu a {
     text-decoration: none;
-    /* color: rgb(196, 45, 28); */
     color: rgb(73, 94, 151);
-
+    padding: 4px;
 }
 
 .menu a:hover, .menu a.active {
-    background-color: rgb(217, 121, 74);
-    color: rgb(73, 94, 151);
+    background-image: url(./watercolour-backgrounds/link-bd.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .menu li {
     margin: 0 1em .3em;
-    /* font-style: italic; */
     font-size: 1.35em;
 }
 
