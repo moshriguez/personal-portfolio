@@ -152,7 +152,6 @@ a {
     grid-template-areas: 
         "resume bio"
         "skills skills";
-    column-gap: .35em;
     row-gap: .35em;
     padding-bottom: 4em;
 }
@@ -336,6 +335,13 @@ a {
     .bio {
         grid-column: 1 / 3;
     }
+    .bio h3 {
+        text-align: center;
+    }
+    .bio img {
+        display: block;
+        margin: auto;
+    }
     .blog-card {
         grid-template-columns: auto;
     }
@@ -363,6 +369,7 @@ a {
     .watercolour-container {
         width: 100%;
         padding: 7%;
+        padding-top: 10%;
     }
 
     /* .projects-container, .about-me, .blogs-container {
@@ -385,7 +392,8 @@ a {
 }
 
 @media (max-width: 320px) {
-    /* .watercolour-container {
-        width: 90%
-    } */
+    .watercolour-container {
+        padding-top: 15%;
+        margin: 1rem auto;
+    }
 }
