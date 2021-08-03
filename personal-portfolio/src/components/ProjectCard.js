@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { risingDiv } from "../helpers/animation";
 import { AiFillApi } from 'react-icons/ai';
@@ -9,8 +9,11 @@ import { VscJson } from 'react-icons/vsc';
 
 const ProjectCard = ({ project }) => {
     const {name, description, image, frontend, backend, github, demo, tools} = project
+    const [isFlipped, setIsFlipped] = useState(false)
 
-    console.log(project)
+    const handleClick = () => {
+        setIsFlipped(!isFlipped)
+    }
 
     const renderIcon = (name, i) => {
         switch(name) {
@@ -54,23 +57,29 @@ const ProjectCard = ({ project }) => {
     }
 
     return (
-        <div className="project-card">
-            <h3>{name}</h3>
-            <img src={image} alt="{name} screenshot" />
-            <p>{description}</p>
-            <div className="links">
-                {!!github ? <a href={github}><SiGithub /> Github</a> : (
-                        <>
-                            <a href={frontend}><SiGithub /> Frontend</a>
-                            <a href={backend}><SiGithub /> Backend</a>
-                        </>
-                    )
-                }
-                <a href={demo}><FaVideo /> Demo</a>
-            </div>
-            <div className="skill-icons">
-                {renderAllIcons()}
-            </div>
+        <div className="project-card" onClick={handleClick} >
+            <div className={`project-card-inner ${isFlipped ? 'is-flipped' : null}`}>
+                <div className="card-face-front" >
+                    <h3>{name}</h3>
+                    <img src={image} alt="{name} screenshot" />
+                    <p>{description}</p>
+                </div>
+                <div className="card-face-back" >
+                    <div className="links">
+                        {!!github ? <a href={github}><SiGithub /> Github</a> : (
+                                <>
+                                    <a href={frontend}><SiGithub /> Frontend</a>
+                                    <a href={backend}><SiGithub /> Backend</a>
+                                </>
+                            )
+                        }
+                        <a href={demo}><FaVideo /> Demo</a>
+                    </div>
+                    <div className="skill-icons">
+                        {renderAllIcons()}
+                    </div>
+                </div>
+                </div>
         </div>
     )
 }
