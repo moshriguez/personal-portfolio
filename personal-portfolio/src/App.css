@@ -147,7 +147,7 @@ a {
     grid-template-areas: 
         "resume bio"
         "skills skills";
-    padding-bottom: 4em;
+    padding-bottom: 6em;
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 
 }
@@ -183,7 +183,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
 }
 
 .project-card {
@@ -245,7 +245,7 @@ a {
 
 /*** BLOGS ***/
 .blogs-container {
-    padding-bottom: 4em;
+    padding-bottom: 6em;
 }
 
 .blog-card {
