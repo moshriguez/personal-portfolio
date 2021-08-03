@@ -148,6 +148,8 @@ a {
         "resume bio"
         "skills skills";
     padding-bottom: 4em;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+
 }
 
 .bio, .tech-skills, .about-skills {
@@ -253,6 +255,7 @@ a {
     margin: .35em 0;
     padding: .35em;
     border-radius: 5px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .blog-img {
@@ -358,9 +361,11 @@ a {
     }
     .about-me {
         row-gap: .35em;
+        box-shadow: none;
     }
     .bio, .tech-skills, .about-skills {
         border-radius: 5px;
+        box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
     }
     .bio {
         grid-column: 1 / 3;
