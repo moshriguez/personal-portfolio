@@ -57,20 +57,62 @@ const About = () => {
                 <div className="about-skills">
                     <h3 id="skills">Skills:</h3>
                     <div className="skill-icons">
-                        <SiHtml5 color="#e54b20"/>
-                        <SiCss3 color="#264de4"/>
-                        <SiJavascript color="#1f4ece"/>
-                        <SiReact color="#61d9fb"/>
-                        <SiRedux color="#764abc"/>
-                        <SiRuby color="#bc1c0a"/>
-                        <SiRails color="#c42f23"/>
-                        <SiFirebase color="#039be5"/>
-                        <SiJsonwebtokens color="#06f1e6"/>
-                        <AiFillApi color="#f05c2b"/>
-                        <VscJson color="skyblue"/>
-                        <DiSqllite color="#034a62"/>
-                        <SiBootstrap color="#7852b2"/>
-                        <SiVisualstudio color="##21a5f1"/>
+                        <div className="icon-and-name" >
+                            <SiHtml5 color="#e54b20"/>
+                            <span className="icon-name" >HTML</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiCss3 color="#264de4"/>
+                            <span className="icon-name" >CSS</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiJavascript color="#1f4ece"/>
+                            <span className="icon-name" >JavaScript</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiReact color="#61d9fb"/>
+                            <span className="icon-name" >React</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiRedux color="#764abc"/>
+                            <span className="icon-name" >Redux</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiRuby color="#bc1c0a"/>
+                            <span className="icon-name" >Ruby</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiRails color="#c42f23"/>
+                            <span className="icon-name" >Rails</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiFirebase color="#039be5"/>
+                            <span className="icon-name" >Firebase</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiJsonwebtokens color="#06f1e6"/>
+                            <span className="icon-name" >JWT</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <AiFillApi color="#f05c2b"/>
+                            <span className="icon-name" >API</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <VscJson color="skyblue"/>
+                            <span className="icon-name" >JSON</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <DiSqllite color="#034a62"/>
+                            <span className="icon-name" >SQLite</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiBootstrap color="#7852b2"/>
+                            <span className="icon-name" >Bootstrap</span>
+                        </div>
+                        <div className="icon-and-name" >
+                            <SiVisualstudio color="##21a5f1"/>
+                            <span className="icon-name" >VS Code</span>
+                        </div>
                     </div>
                 </div>
             </div>
