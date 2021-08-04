@@ -20,7 +20,7 @@ export const risingName = {
     end: {
         y: 0,
         opacity: 1, 
-        transition: {duration: 3, delay: 2}
+        transition: {duration: 3, delay: 0}
     }
 }
 
@@ -32,7 +32,7 @@ export const risingNavBar = {
         opacity: 1, 
         transition: {
             staggerChildren: 0.5,
-            delayChildren: 4
+            delayChildren: 1
         }
     }
 }
