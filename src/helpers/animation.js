@@ -28,10 +28,8 @@ export const risingName = {
 
 export const risingNavBar = {
     start: {
-        opacity: 0
     },
     end: {
-        opacity: 1, 
         transition: {
             staggerChildren: 0.5,
             delayChildren: 1

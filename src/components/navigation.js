@@ -6,29 +6,6 @@ import { navLink, risingNavBar } from "../helpers/animation";
 
 
 const Navigation = () => {
-    // const risingNavBar = {
-    //     start: {
-    //         opacity: 0
-    //     },
-    //     end: {
-    //         opacity: 1, 
-    //         transition: {
-    //             staggerChildren: 0.5,
-    //             delayChildren: 4
-    //         }
-    //     }
-    // }
-    // const navLink = {
-    //     start: {
-    //         y: 100
-    //     }, 
-    //     end: {
-    //         y: 0,
-    //         transition: {
-    //             duration: 2
-    //         }        
-    //     }
-    // }
 
     return (
         <motion.ul className="menu" variants={risingNavBar} initial="start" animate="end">
