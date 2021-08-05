@@ -2,7 +2,7 @@ export const projects = [
     {
         name: 'Beat Machine',
         description: 'Drum sequencer app with social interaction.',
-        image: 'beat-machine-screenshot.png',
+        image: process.env.PUBLIC_URL + '/beat-machine-screenshot.png',
         frontend: 'https://github.com/moshriguez/drum-machine-frontend',
         backend: 'https://github.com/moshriguez/drum-machine-backend',
         demo: 'https://loom.com/share/92620bab5dea457da1b08882d2987169',
@@ -11,7 +11,7 @@ export const projects = [
     {
         name: "What's in the Fridge?",
         description: "An app to help discover new recipes based on ingredients in a user's fridge",
-        image: 'whats-in-the-fridge-screenshot.png',
+        image: process.env.PUBLIC_URL + '/whats-in-the-fridge-screenshot.png',
         frontend: 'https://github.com/moshriguez/whats-in-the-fridge-frontend',
         backend: 'https://github.com/moshriguez/whats-in-the-fridge-backend',
         demo: 'https://www.loom.com/share/176d2e296731419e90a2bde95143e59d',
@@ -20,7 +20,7 @@ export const projects = [
     {
         name: 'PuzzleTheque',
         description: 'A puzzle library app where users can browse and check out jigsaw puzzles',
-        image: 'puzzletheque-screenshot.png',
+        image: process.env.PUBLIC_URL + '/puzzletheque-screenshot.png',
         github: 'https://github.com/moshriguez/puzzle-library-app',
         demo: 'https://www.loom.com/share/ac4af1c5f89c4b3c958c3842bfc7e63c',
         tools: ['react', 'ruby', 'sqlite']
@@ -28,7 +28,7 @@ export const projects = [
     {
         name: 'Robots vs. Kittens',
         description: 'Turn based battle game. Lead your robot warriors to victory against the evil kittens',
-        image: 'robots-vs-kittens-screenshot.png',
+        image: process.env.PUBLIC_URL + '/robots-vs-kittens-screenshot.png',
         github: 'https://github.com/zfrohardt/robokitten',
         demo: '',
         tools: ['react', 'css', 'api', 'json']
@@ -36,7 +36,7 @@ export const projects = [
     {
         name: 'What you know?',
         description: 'A trivia app using Jeopardy style questions',
-        image: 'what-you-know-screenshot.png',
+        image: process.env.PUBLIC_URL + '/what-you-know-screenshot.png',
         github: 'https://github.com/harman-kaur0/Jeopardy',
         demo: '',
         tools: ['javascript', 'css', 'html', 'api', 'json']
