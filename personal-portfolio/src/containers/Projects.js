@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { risingDiv } from "../helpers/animation";
 import { AiFillApi } from 'react-icons/ai';
@@ -10,6 +10,9 @@ import { projects } from "../helpers/projects";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     const renderCard = () => {
         return projects.map(project => {

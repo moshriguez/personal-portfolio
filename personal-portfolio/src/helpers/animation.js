@@ -1,9 +1,11 @@
 export const risingDiv = {
     start: {
-        y: 700
+        // y: 700
+        opacity: 0
     },
     end: {
-        y: 0,
+        opacity: 1,
+        // y: 0,
         transition: {
             duration: 1,
             type: 'spring',

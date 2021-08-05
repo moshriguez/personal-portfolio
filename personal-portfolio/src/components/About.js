@@ -17,8 +17,10 @@ const About = () => {
 
     useEffect(() => {
         window.addEventListener('resize', () => calculateWidth())
+        window.scroll(0, 0)
         return () => {window.removeEventListener('resize', calculateWidth)}
     }, [])
+
     const calculateWidth = () => {
         const newWidth = window.innerWidth 
             || document.documentElement.clientWidth
