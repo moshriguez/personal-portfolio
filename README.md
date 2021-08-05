@@ -11,7 +11,7 @@ Project is created with:
 - gh-pages 3.2.3
 
 ## View the Live Site
-<a href="https://moshriguez.github.io/personal-portfolio/">site</a>
+<a href="https://moshriguez.github.io/personal-portfolio/">click here!</a>
 
 ## TODOs
 - [x] create react app
