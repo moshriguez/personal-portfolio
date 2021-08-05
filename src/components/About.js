@@ -36,7 +36,7 @@ const About = () => {
                     <h3>Hello!</h3> 
                     {windowWidth < 769 ? <img src="http://placekitten.com/g/200/300" alt="pic of Marc Rodriguez"/> : null}
                     <h3>I'm Marc Rodriguez.</h3> 
-                    <p>I'm a Full Stack Developer with experience using frontend and backend technologies. <a href="#skills">see full list of skills</a></p>
+                    <p>I'm a Full Stack Developer with experience using frontend and backend technologies. <a href="#skills">-see full list of skills</a></p>
                     <p>I am a recent graduate of Flatiron School.</p>
 
                     <p>I was introduced to programming by a close friend, a web developer. I was looking for a career change that would challenge me and at the same time be rewarding. I started with some free courses online and quickly fell in love with the problem solving aspects of programming. I now try to code everyday to learn new things and to improve my skills.</p>
