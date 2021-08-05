@@ -1,4 +1,17 @@
-# personal-portfolio
+# Marc Rodriguez Personal Portfolio
+## Introduction
+Welcome to my personal portfolio README! This project was created to show off the different projects I have made that I am proud to share. This is a work in progress and I will be adding features over time. See below for my checklist of what I would like to include. 
+
+## Technologies
+Project is created with: 
+- React 17.0.2
+- React Router 5.2.0
+- Framer-Motion 4.1.17
+- React Icons 4.2.0
+- gh-pages 3.2.3
+
+## View the Live Site
+<a href="https://moshriguez.github.io/personal-portfolio/">site</a>
 
 ## TODOs
 - [x] create react app
@@ -15,4 +28,4 @@
 - [x] add call to action on contact page
 - [ ] try different font
 - [ ] try adding text shadow to headers
-- [ ] compress project pics so they are smaller
+- [x] compress project pics so they are smaller
