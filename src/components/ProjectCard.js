@@ -114,7 +114,7 @@ const ProjectCard = ({ project }) => {
                                 </>
                             )
                         }
-                        <a href={demo}><FaVideo /> Demo</a>
+                        {!!demo ? <a href={demo}><FaVideo /> Demo</a> : null}
                     </div>
                     <div className="skill-icons">
                         {renderAllIcons()}
