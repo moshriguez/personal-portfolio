@@ -344,6 +344,10 @@ a {
 }
 
 /*** CONTACT ***/
+.call-to-action {
+    font-size: 1.75em;
+    text-align: center;
+}
 .link-icons {
     display: flex;
     width: 100%;
@@ -360,6 +364,10 @@ a {
 
 .link-icons span {
     padding: 5px;
+}
+
+.link-icons svg {
+    vertical-align: -0.125em;
 }
 
 /*** MEDIA QUERIES ***/

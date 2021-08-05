@@ -10,9 +10,9 @@
 - [x] project cards have 2 sides and animate a flip action on hover
 - [x] add hover effect for icon to display their name
 - [ ] stop being a cat
-- [ ] add resume
+- [x] add resume
 - [ ] add a form to contact page
-- [ ] add call to action on contact page
+- [x] add call to action on contact page
 - [ ] try different font
 - [ ] try adding text shadow to headers
 - [ ] compress project pics so they are smaller
