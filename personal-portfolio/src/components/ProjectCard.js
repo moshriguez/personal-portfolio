@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { risingDiv } from "../helpers/animation";
 import { AiFillApi } from 'react-icons/ai';
 import { DiSqllite } from 'react-icons/di';
 import { FaVideo } from 'react-icons/fa';

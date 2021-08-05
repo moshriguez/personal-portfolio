@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { risingDiv } from "../helpers/animation";
 
 const BlogCard = ({ blog }) => {
     const { name, brief, time, image, url, tags } = blog
