@@ -46,7 +46,7 @@ function App() {
     <div className="App">
       <Navigation />
       <Switch>
-        <Route exact path='/' render={() => <Home />} />
+        <Route exact path='/personal-portfolio' render={() => <Home />} />
         <Route exact path='/about' render={() => <About />} />
         <Route exact path='/projects' render={() => <Projects />} />
         <Route exact path='/blogs' render={() => <Blogs />} />
