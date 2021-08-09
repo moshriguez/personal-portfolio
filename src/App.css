@@ -152,6 +152,11 @@ a {
 
 }
 
+.about-me img {
+    width: 100%;
+    border-radius: 12px;
+}
+
 .bio, .tech-skills, .about-skills {
     padding: 1em;
 }
