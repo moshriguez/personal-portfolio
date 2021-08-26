@@ -12,6 +12,7 @@ import About from "./components/About";
 import Projects from "./containers/Projects";
 import Blogs from "./containers/Blogs";
 import Contact from "./components/Contact";
+import ButtonGroup from "./components/ButtonGroup";
 
 function App() {
   useEffect(()=> {
@@ -45,6 +46,7 @@ function App() {
   return (
     <div className="App">
       <Navigation />
+      <ButtonGroup />
       <Switch>
         <Route exact path='/' render={() => <Home />} />
         <Route exact path='/about' render={() => <About />} />
