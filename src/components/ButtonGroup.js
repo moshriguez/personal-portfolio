@@ -4,8 +4,10 @@ import { RiMoonClearFill, RiSunFoggyFill } from 'react-icons/ri';
 
 const ButtonGroup = () => {
 
-    const handleClick = () => {
-        
+    const handleClick = (timeOfDay) => {
+		const bodyClasses = document.body.classList
+		document.body.classList.remove(...bodyClasses)
+		document.body.classList.add(timeOfDay)
     }
 
 	return (
