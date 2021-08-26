@@ -54,7 +54,20 @@ body {
 
 .btn-grp button {
     font-size: 2em;
-    
+    background: rgb(255 255 255 / 21%);;
+    border-radius: 50%;
+    border: none;
+    transition: background 200ms
+}
+
+.btn-grp button:hover {
+    background: rgb(255 255 255 / 35%);
+
+}
+
+.btn-grp svg {
+    margin: 6px auto;
+    display: block;
 }
 
 .trees {
