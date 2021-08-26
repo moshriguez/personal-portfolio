@@ -34,7 +34,7 @@ const About = () => {
             <div className="about-me">
                 <div className="bio">
                     <h3>Hello!</h3> 
-                    {windowWidth < 769 ? <img src="http://placekitten.com/g/200/300" alt="pic of Marc Rodriguez"/> : null}
+                    {windowWidth < 769 ? <img src={process.env.PUBLIC_URL + '/profile-pic.jpeg'} alt="pic of Marc Rodriguez"/> : null}
                     <h3>I'm Marc Rodriguez.</h3> 
                     <p>I'm a Full Stack Developer with experience using frontend and backend technologies. <a href="#skills">-see full list of skills</a></p>
                     <p>I am a recent graduate of Flatiron School.</p>
@@ -49,7 +49,7 @@ const About = () => {
 
                 </div>
                 <div className="tech-skills">
-                    {windowWidth >= 769 ? <img src="http://placekitten.com/g/200/300" alt="pic of Marc Rodriguez"/> : null}
+                    {windowWidth >= 769 ? <img src={process.env.PUBLIC_URL + '/profile-pic.jpeg'} alt="pic of Marc Rodriguez"/> : null}
                     <h3>When I am not coding:</h3>            
 
                     <p>Music has always been an important part of my life. I studied music technology at University. I have also played the drums for most of my life. I have recently been exploring the intersection of audio and programming.</p> 
