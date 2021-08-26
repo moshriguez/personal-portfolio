@@ -44,6 +44,19 @@ body {
     background-attachment: fixed;
 }
 
+.btn-grp {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn-grp button {
+    font-size: 2em;
+    
+}
+
 .trees {
     width: 100%;
     position: fixed;

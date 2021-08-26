@@ -5,26 +5,26 @@ import { RiMoonClearFill, RiSunFoggyFill } from 'react-icons/ri';
 const ButtonGroup = () => {
 
     const handleClick = () => {
-        ``
+        
     }
 
 	return (
 		<div className="btn-grp">
-			<Button onClick={()=> {handleClick('night-time')}}>
+			<button onClick={()=> {handleClick('night-time')}}>
 				<RiMoonClearFill />
-			</Button>
-			<Button onClick={()=> {handleClick('early-sunrise')}}>
+			</button>
+			<button onClick={()=> {handleClick('early-sunrise')}}>
 				<FiSunrise />
-			</Button>
-			<Button onClick={()=> {handleClick('light-day-time')}}>
+			</button>
+			<button onClick={()=> {handleClick('light-day-time')}}>
 				<RiSunFoggyFill />
-			</Button>
-			<Button onClick={()=> {handleClick('pleasant-day-time')}}>
+			</button>
+			<button onClick={()=> {handleClick('pleasant-day-time')}}>
 				<FiSun />
-			</Button>
-			<Button onClick={()=> {handleClick('vivid-sunset')}}>
+			</button>
+			<button onClick={()=> {handleClick('vivid-sunset')}}>
 				<FiSunset />
-			</Button>
+			</button>
 		</div>
 	);
 };
