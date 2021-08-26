@@ -70,6 +70,10 @@ body {
     display: block;
 }
 
+.btn-grp .move-up-svg {
+    margin: 2px auto 10px auto;
+}
+
 .trees {
     width: 100%;
     position: fixed;

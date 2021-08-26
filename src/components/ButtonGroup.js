@@ -16,7 +16,7 @@ const ButtonGroup = () => {
 				<RiMoonClearFill />
 			</button>
 			<button onClick={()=> {handleClick('early-sunrise')}}>
-				<FiSunrise />
+				<FiSunrise className='move-up-svg'/>
 			</button>
 			<button onClick={()=> {handleClick('light-day-time')}}>
 				<RiSunFoggyFill />
@@ -25,7 +25,7 @@ const ButtonGroup = () => {
 				<FiSun />
 			</button>
 			<button onClick={()=> {handleClick('vivid-sunset')}}>
-				<FiSunset />
+				<FiSunset className='move-up-svg'/>
 			</button>
 		</div>
 	);
