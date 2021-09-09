@@ -16,7 +16,7 @@ Project is created with:
 ## TODOs
 - [x] create react app
 - [x] add function in useEffect in App that checks time of day and sets the body's class to give it a different background gradient
-    - [ ] add buttons to change the 'time of day' (to show off this feature)
+    - [x] add buttons to change the 'time of day' (to show off this feature)
 - [x] make it so page are always loaded at the top of the element
 - [x] project cards have 2 sides and animate a flip action on hover
 - [x] add hover effect for icon to display their name
