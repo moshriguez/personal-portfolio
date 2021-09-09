@@ -1,7 +1,9 @@
 import e from "express";
 import { name } from "file-loader";
 import React, {useState} from "react";
-import * as emailjs from emailjs
+import emailjs from "emailjs-com"
+
+const USER_ID = process.env.REACT_APP_USER_ID
 
 const Form = () => {
     const [contactForm, setContactForm] = useState({name: '', message: '', email: '', subject: ''})
@@ -16,10 +18,10 @@ const Form = () => {
             message
         }
         emailjs.send(
-            'gmail',
-            'template_XXX',
+            'default_service',
+            'template_rltdtcs',
             emailContent,
-            'user_XXX'
+            USER_ID
         )
         resetForm()
     }
