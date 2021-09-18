@@ -7,6 +7,7 @@ import { CgLoadbarDoc } from 'react-icons/cg';
 
 
 import { risingDiv } from "../helpers/animation";
+import Form from "./Form";
 
 const Contact = () => {
 
@@ -26,14 +27,17 @@ const Contact = () => {
                     <FontAwesomeIcon icon={faGithub} /> 
                     <span>GitHub</span>
                 </a>
-                <a href="mailto:marc.herman.rodriguez@gmail.com" >
+                {/* <a href="mailto:marc.herman.rodriguez@gmail.com" >
                     <FontAwesomeIcon icon={faEnvelope} /> 
                     <span>Email</span>
-                </a>
+                </a> */}
                 <a href={process.env.PUBLIC_URL + "/resume.pdf"} >
                     <CgLoadbarDoc />
                     <span>Resume</span>
                 </a>
+            </div>
+            <div>
+                <Form />
             </div>
         </motion.div>
     )

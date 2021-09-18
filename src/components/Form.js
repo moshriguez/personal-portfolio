@@ -1,5 +1,3 @@
-import e from "express";
-import { name } from "file-loader";
 import React, {useState} from "react";
 import emailjs from "emailjs-com"
 
@@ -17,6 +15,7 @@ const Form = () => {
             subject,
             message
         }
+        console.log('USER_ID:', USER_ID, 'email content:', emailContent)
         emailjs.send(
             'default_service',
             'template_rltdtcs',
@@ -48,8 +47,8 @@ const Form = () => {
             <label htmlFor="subject">Subject</label>
             <input type="text" name="subject" onChange={handleChange} value={contactForm.subject} />
             <label htmlFor="message">Message</label>
-            <input type="text" name="message" onChange={handleChange} value={contactForm.message} />
-
+            <input type="textarea" name="message" onChange={handleChange} value={contactForm.message} />
+            <input type="submit" value="submit" />
         </form>
     )
 }
