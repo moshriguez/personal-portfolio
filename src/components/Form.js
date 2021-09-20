@@ -1,7 +1,4 @@
 import React, {useState} from "react";
-import emailjs from "emailjs-com"
-
-const USER_ID = process.env.REACT_APP_USER_ID
 
 const Form = () => {
     const [contactForm, setContactForm] = useState({name: '', message: '', email: '', subject: ''})
@@ -15,13 +12,17 @@ const Form = () => {
             subject,
             message
         }
-        console.log('USER_ID:', USER_ID, 'email content:', emailContent)
-        emailjs.send(
-            'default_service',
-            'template_rltdtcs',
-            emailContent,
-            USER_ID
-        )
+        const config = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(emailContent)
+        }
+        fetch('http://localhost:3000/', config)
+        .then(res => res.json())
+        .then(console.log)
         resetForm()
     }
 
