@@ -20,7 +20,7 @@ const Form = () => {
             },
             body: JSON.stringify(emailContent)
         }
-        fetch('http://localhost:3000/', config)
+        fetch('https://radiant-island-38686.herokuapp.com/', config)
         .then(res => res.json())
         .then(console.log)
         resetForm()
