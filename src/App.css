@@ -418,8 +418,14 @@ input, textarea {
     border: 1px solid rgb(73, 94, 151);
     background: rgb(199 198 198 / 23%);
     color: rgb(73, 94, 151);
-    font-size: 1.15em;
+    font-size: 1em;
     padding: 5px;
+    font-family: 'Ariel', sans-serif;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 6em;
 }
 
 /*** MEDIA QUERIES ***/
