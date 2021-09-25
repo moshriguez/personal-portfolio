@@ -420,7 +420,7 @@ form {
 
 input, textarea {
     border: 1px solid rgb(73, 94, 151);
-    background: rgb(199 198 198 / 23%);
+    background: rgb(234 234 234 / 53%);
     color: rgb(73, 94, 151);
     font-size: 1em;
     padding: 5px;
@@ -438,6 +438,7 @@ input:focus, textarea:focus {
 }
 
 input[type=submit] {
+    background: rgb(255 238 0 / 51%);
     margin: 5px 0;
     font-family: 'Teko', sans-serif;
     font-size: 1.35em;

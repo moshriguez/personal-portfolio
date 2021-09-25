@@ -35,7 +35,7 @@ const Form = () => {
             console.log(newErrors)
             setErrors(newErrors)
         } else {
-            // handleFetch()
+            handleFetch()
             setErrors(newErrors)
             console.log('no errors')
         }
