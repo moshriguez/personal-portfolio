@@ -80,7 +80,7 @@ const Form = () => {
             <input type="text" name="subject" onChange={handleChange} value={contactForm.subject} />
             <label htmlFor="message">Message</label>
             <textarea type="textarea" name="message" onChange={handleChange} value={contactForm.message} />
-            <input type="submit" value="submit" />
+            <input type="submit" value="Submit" />
         </form>
     )
 }
