@@ -431,7 +431,19 @@ textarea {
 input:focus, textarea:focus {
     outline: none;
     box-shadow: inset 0px 0px 3px 1px rgb(73 94 151);
+}
 
+input[type=submit] {
+    margin: 5px 0;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.35em;
+    line-height: 1em;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+input[type=submit]:active {
+    background-color: transparent;
 }
 
 /*** MEDIA QUERIES ***/
