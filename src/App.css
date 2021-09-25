@@ -45,23 +45,27 @@ body {
 }
 
 .btn-grp {
-    margin: auto;
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: flex-end;
 }
 
 .btn-grp button {
-    font-size: 2em;
+    font-size: 1em;
     background: rgb(255 255 255 / 21%);;
     border-radius: 50%;
     border: none;
-    transition: background 200ms
+    margin: 0 2px;
+    transition: all 200ms
 }
 
 .btn-grp button:hover {
     background: rgb(255 255 255 / 35%);
+    font-size: 2em;
 
 }
 
@@ -512,6 +516,14 @@ form span {
     .link-icons a {
         font-size: 2em;
     }
+    .btn-grp {
+        flex-direction: row;
+        align-items: flex-start;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
     h2 {
         font-size: 2.5em;
     }
@@ -522,6 +534,7 @@ form span {
         width: 100%;
         padding: 7%;
         padding-top: 10%;
+        margin-top: 3rem;
     }
     .blog-img {
         display: none;
@@ -545,6 +558,5 @@ form span {
 @media (max-width: 320px) {
     .watercolour-container {
         padding-top: 15%;
-        margin: 1rem auto;
     }
 }
