@@ -450,6 +450,11 @@ form span {
     font-size: .85em;
 }
 
+.error {
+    border: 1px solid #ffd400;
+
+}
+
 /*** MEDIA QUERIES ***/
 @media (max-width: 1024px) {
     .menu {
@@ -531,6 +536,9 @@ form span {
     }
     .blog-card-data + p {
         display: none;
+    }
+    form {
+        width: 100%;
     }
 }
 

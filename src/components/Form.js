@@ -73,25 +73,54 @@ const Form = () => {
 
     const renderErrors = (regexStr) => {
         const regex = new RegExp(regexStr)
-        if (errors) {
+        if (errors.length > 0) {
             const errorMessage = errors.find(error => regex.test(error))
-            return <span>{errorMessage}</span>
+            if (errorMessage) {
+                return <span>{errorMessage}</span>
+            }
+        }
+    }
+    
+    const errorOutline = (regexStr) => {
+        const regex = new RegExp(regexStr)
+        if (errors) {
+            return errors.some(error => regex.test(error))
         }
     }
 
     return (
         <form onSubmit={handleSubmit} >
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" onChange={handleChange} value={contactForm.name} />
+            <input 
+                type="text" 
+                name="name" 
+                onChange={handleChange} 
+                className={errorOutline('name') ? 'error' : 'none'}
+                value={contactForm.name} />
             {renderErrors('name')}
             <label htmlFor="email">Email</label>
-            <input type="text" name="email" onChange={handleChange} value={contactForm.email} />
+            <input 
+                type="text" 
+                name="email" 
+                onChange={handleChange} 
+                className={errorOutline('email') ? 'error' : 'none'}
+                value={contactForm.email} />
             {renderErrors('email')}
             <label htmlFor="subject">Subject</label>
-            <input type="text" name="subject" onChange={handleChange} value={contactForm.subject} />
+            <input 
+                type="text" 
+                name="subject" 
+                onChange={handleChange} 
+                className={errorOutline('subject') ? 'error' : 'none'}
+                value={contactForm.subject} />
             {renderErrors('subject')}
             <label htmlFor="message">Message</label>
-            <textarea type="textarea" name="message" onChange={handleChange} value={contactForm.message} />
+            <textarea 
+                type="textarea" 
+                name="message" 
+                onChange={handleChange} 
+                className={errorOutline('message') ? 'error' : 'none'}
+                value={contactForm.message} />
             {renderErrors('message')}
             <input type="submit" value="Submit" />
         </form>
