@@ -36,6 +36,7 @@ const Form = () => {
             setErrors(newErrors)
         } else {
             // handleFetch()
+            setErrors(newErrors)
             console.log('no errors')
         }
         return !errors.length
@@ -70,16 +71,28 @@ const Form = () => {
         setContactForm({name: '', message: '', email: '', subject: ''})
     }
 
+    const renderErrors = (regexStr) => {
+        const regex = new RegExp(regexStr)
+        if (errors) {
+            const errorMessage = errors.find(error => regex.test(error))
+            return <span>{errorMessage}</span>
+        }
+    }
+
     return (
         <form onSubmit={handleSubmit} >
             <label htmlFor="name">Name</label>
             <input type="text" name="name" onChange={handleChange} value={contactForm.name} />
+            {renderErrors('name')}
             <label htmlFor="email">Email</label>
             <input type="text" name="email" onChange={handleChange} value={contactForm.email} />
+            {renderErrors('email')}
             <label htmlFor="subject">Subject</label>
             <input type="text" name="subject" onChange={handleChange} value={contactForm.subject} />
+            {renderErrors('subject')}
             <label htmlFor="message">Message</label>
             <textarea type="textarea" name="message" onChange={handleChange} value={contactForm.message} />
+            {renderErrors('message')}
             <input type="submit" value="Submit" />
         </form>
     )
