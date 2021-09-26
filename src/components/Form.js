@@ -1,8 +1,12 @@
 import React, {useState} from "react";
 
+import Modal from "./Modal";
+
 const Form = () => {
     const [contactForm, setContactForm] = useState({name: '', message: '', email: '', subject: ''})
     const [errors, setErrors] = useState([])
+    const [sending, setSending] = useState(false)
+    const [popUpMessage, setPopUpMessage] = useState('Your message is being sent...')
 
     const handleChange = (e) => {
         setContactForm({
@@ -36,6 +40,7 @@ const Form = () => {
             setErrors(newErrors)
         } else {
             handleFetch()
+            setSending(true)
             setErrors(newErrors)
             console.log('no errors')
         }
@@ -62,6 +67,7 @@ const Form = () => {
         .then(res => res.json())
         .then((res) => {
             console.log(res)
+            setPopUpMessage(res.message)
             resetForm()
         })
         .catch(err => setErrors([...errors, err]))
@@ -88,7 +94,21 @@ const Form = () => {
         }
     }
 
+    const renderModal = () => {
+        if (sending) {
+            return <Modal 
+                message={popUpMessage} 
+                resetForm={resetForm} 
+                setSending={setSending} 
+                errors={errors} 
+                />
+        } else {
+            return null
+        }
+    }
+
     return (
+        <>
         <form onSubmit={handleSubmit} >
             <label htmlFor="name">Name</label>
             <input 
@@ -124,6 +144,8 @@ const Form = () => {
             {renderErrors('message')}
             <input type="submit" value="Submit" />
         </form>
+        {renderModal()}
+        </>
     )
 }
 
