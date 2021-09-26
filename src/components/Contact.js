@@ -18,11 +18,11 @@ const Contact = () => {
                 Please feel free to reach out if you would like to discuss my work or a possible opportunity.
             </p>
             <div className="link-icons">
-                <a href="https://www.linkedin.com/in/marc-herman-rodriguez" target="_blank">   
+                <a href="https://www.linkedin.com/in/marc-herman-rodriguez" target="_blank" rel="noopener noreferrer">   
                     <FontAwesomeIcon icon={faLinkedin} /> 
                     <span>LinkedIn</span>
                 </a>
-                <a href="https://github.com/moshriguez" target="_blank" >
+                <a href="https://github.com/moshriguez" target="_blank" rel="noopener noreferrer" >
                     <FontAwesomeIcon icon={faGithub} /> 
                     <span>GitHub</span>
                 </a>
@@ -35,9 +35,7 @@ const Contact = () => {
                     <span>Resume</span>
                 </a>
             </div>
-            <div>
-                <Form />
-            </div>
+            <Form />
         </motion.div>
     )
 }

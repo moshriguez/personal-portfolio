@@ -18,7 +18,7 @@ const BlogCard = ({ blog }) => {
         <div className="blog-img">
             <img src={image} alt="blog splash pic" />
         </div>
-        <a href={url} target="_blank"><h3>{name}</h3></a>
+        <a href={url} target="_blank" rel="noopener noreferrer"><h3>{name}</h3></a>
         <div className="blog-card-data">
             <p>{time} minute read</p>
             <div className="tags">
