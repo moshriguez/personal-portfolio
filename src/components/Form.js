@@ -68,13 +68,14 @@ const Form = () => {
         .then((res) => {
             console.log(res)
             setPopUpMessage(res.message)
-            resetForm()
+            // resetForm() - Modal does this now
         })
         .catch(err => setErrors([...errors, err]))
     }
-
+    
     const resetForm = () => {
         setContactForm({name: '', message: '', email: '', subject: ''})
+        setPopUpMessage('Your message is being sent...')
     }
 
     const renderErrors = (regexStr) => {
