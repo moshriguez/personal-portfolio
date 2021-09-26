@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { risingDiv } from "../helpers/animation";
 import { AiFillApi } from 'react-icons/ai';
 import { DiSqllite } from 'react-icons/di';
-import { SiBootstrap, SiCss3, SiFirebase, SiGithub, SiHtml5, SiJavascript, SiJsonwebtokens, SiRails, SiReact, SiRedux, SiRuby, SiVisualstudio } from 'react-icons/si';
+import { SiBootstrap, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiJsonwebtokens, SiRails, SiReact, SiRedux, SiRuby, SiVisualstudio } from 'react-icons/si';
 import { VscJson } from 'react-icons/vsc';
 
 

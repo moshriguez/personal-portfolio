@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
 import { Route, Switch } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import './App.css';
 
